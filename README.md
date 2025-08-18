@@ -145,53 +145,6 @@
     @keyframes blink {
       50% { border-color: transparent; }
     }
-
-    /* Project Cards */
-    .projects-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .project-card {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 1rem;
-      border-radius: 10px;
-      border: 1px solid #00f0ff;
-      box-shadow: 0 0 10px #00f0ff;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px #00f0ff;
-    }
-
-    .project-card h4 {
-      color: #00f0ff;
-      margin-bottom: 0.5rem;
-    }
-
-    .project-card p {
-      font-size: 0.9rem;
-      color: #ccc;
-      margin-bottom: 0.5rem;
-    }
-
-    .project-card a {
-      color: #fff;
-      background: #00f0ff;
-      padding: 0.4rem 0.8rem;
-      border-radius: 5px;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: bold;
-      transition: 0.3s ease;
-    }
-
-    .project-card a:hover {
-      background: #00c4d4;
-    }
   </style>
 </head>
 <body>
@@ -199,6 +152,8 @@
   <div id="particles-js"></div>
 
   <header>
+    <!-- Replace link with your actual profile photo -->
+    <img src="new photo..1.jpg" alt="Profile Picture" class="profile-pic">
     <h1>Sumansh Yadav</h1>
     <h2 class="typing">Aspiring Backend Developer</h2>
     <p>Mathura, Uttar Pradesh</p>
@@ -239,27 +194,6 @@
   </section>
 
   <section>
-    <h3>Projects</h3>
-    <div class="projects-container">
-      <div class="project-card">
-        <h4>Student Grade Tracker</h4>
-        <p>A GUI app to track, edit, and analyze student grades with Python Tkinter.</p>
-        <a href="https://github.com/sumaanshcodes/student-grade-tracker" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h4>Portfolio Website</h4>
-        <p>A responsive personal portfolio showcasing skills, projects, and achievements.</p>
-        <a href="https://github.com/sumaanshcodes" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h4>Java Backend API</h4>
-        <p>Spring Boot API for managing user data with MySQL integration.</p>
-        <a href="https://github.com/sumaanshcodes" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
-
-  <section>
     <h3>Education</h3>
     <p><strong>B.Tech in Computer Science & Engineering</strong><br>
     GLA University, Mathura</p>
@@ -287,10 +221,10 @@
         number: { value: 80, density: { enable: true, value_area: 800 } },
         color: { value: "#00f0ff" },
         shape: { type: "circle" },
-        opacity: { value: 0.5 },
+        opacity: { value: 0.5, random: false },
         size: { value: 3, random: true },
         line_linked: { enable: true, distance: 150, color: "#00f0ff", opacity: 0.4, width: 1 },
-        move: { enable: true, speed: 3 }
+        move: { enable: true, speed: 3, direction: "none", random: false, straight: false, out_mode: "out" }
       },
       interactivity: {
         detect_on: "canvas",
@@ -308,4 +242,3 @@
   </script>
 </body>
 </html>
-# Portfolio
